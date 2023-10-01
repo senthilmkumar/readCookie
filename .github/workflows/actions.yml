@@ -16,11 +16,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2  # Use the latest version
     
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'  # You can specify the version you want here  
-
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
