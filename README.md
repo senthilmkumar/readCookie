@@ -1,2 +1,2 @@
 # readCookie
-This projecy will read website cookie 
+This project will read website cookie 
