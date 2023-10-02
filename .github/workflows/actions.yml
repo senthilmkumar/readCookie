@@ -21,5 +21,13 @@ jobs:
       with:
         python-version: '3.x'  # Specify Python 3
 
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'  # Specify Node.js version 16
+    - name: Make executeable
+      run: chmod +x ${{ github.workspace }}/bin/getSiteCookie.py
+        
+
     - name: Run Python Script
       run: ${{ github.workspace }}/bin/getSiteCookie.py   # Path to your Python script
