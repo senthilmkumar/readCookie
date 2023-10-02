@@ -30,4 +30,4 @@ jobs:
       run: chmod +x ${{ github.workspace }}/bin/getSiteCookie.py
 
     - name: Run Python Script
-      run: python ${{ github.workspace }}/bin/getSiteCookie.py   # Path to your Python script
+      run: python3 ${{ github.workspace }}/bin/getSiteCookie.py   # Path to your Python script
