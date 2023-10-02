@@ -25,9 +25,9 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '16'  # Specify Node.js version 16
+    
     - name: Make executeable
       run: chmod +x ${{ github.workspace }}/bin/getSiteCookie.py
-        
 
     - name: Run Python Script
-      run: ${{ github.workspace }}/bin/getSiteCookie.py   # Path to your Python script
+      run: python ${{ github.workspace }}/bin/getSiteCookie.py   # Path to your Python script
